@@ -6,83 +6,234 @@
 <!-- TAG HTML -->
 
 <head>
-   <!--Responsável por receber configurações da página-->
+    <!--Responsável por receber configurações da página-->
 
-   <meta charset="UTF-8">
-   <title>CASA CRIATIVA</title>
-
-   <style>
-      /* Estilo em cascata */
-
-      body {
-         background: #e5e5e5;
-         color: #24282b;
-         text-align: center;
-      }
-
-      button {
-         border: none;
-         font-weight: bold;
-         background: none;
-         color: #ff5e84;
-      }
-
-      button.fat {
-         background: #ff5e84;
-         color: white;
-      }
-
-      #footer a {
-         color: #25282B;
-         text-decoration: none;
-      }
-
-      .hide {
-         display: none;
-      }
-   </style>
+    <meta charset="UTF-8">
+    <title>CASA CRIATIVA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-   <img src="logo.png" alt="Imagem da Logomarca">
+    <div id="container">
+        <!--ABRE-->
+        <!--"CAIXA GRANDE" EM VOLTA DE TUDO-->
 
-   <p>
-      Ficar em casa em períodos longos não deve ser nada fácil.
-   </p>
 
-   <p>
-      Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes,
-         livros, cursos, dicas</strong> e tudo que for necessário para tornar
-      esse momento mais interessante.
-   </p>
+        <section id="intro">
+            <!--ABRE-->
+            <!--CAIXA QUE FICA A LOGO, O TEXTO INICIAL E OS DOIS BOTÕES-->
 
-   <p>
-      Comece clicando em ver ideias para ver as
-      ideias cadastradas e contribua adicionando a sua ideia.
-   </p>
 
-   <button>+Adicionar Ideia</button>
-   <button class="fat">Ver Ideias</button>
+            <header>
+                <!--CABEÇALHO, LOGO DO PROJETO-->
+                <img src="logo.png" alt="Imagem da Logomarca">
+            </header>
 
-   
-   <!-- abre página em uma nova aba -->
-   <!-- <p id="footer"> Com ❤ <a href="http://rocketseat.com.br" target="_blank">Rocketseat</a> </p> -->
-   <p id="footer"> Com ❤ <a href="http://rocketseat.com.br">Rocketseat</a> </p>
 
-   <script>
 
-      document
-         .querySelector("button.fat")
-         .addEventListener("click", function () {
-            document
-               .querySelector("#footer")
-               .classList
-               .toggle("hide")
-         })
+            <main>
+                <!--CONTEÚDO PRINCIPAL DA PÁGINA-->
+                <p>
+                    Ficar em casa em períodos longos não deve ser nada fácil.
+                </p>
 
-   </script>
+                <p>
+                    Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes,
+                        livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais
+                    interessante.
+                </p>
+
+                <p>
+                    Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicionando a sua ideia.
+                </p>
+            </main>
+
+
+
+            <section id="buttons">
+                <!--CAIXA COM OS DOIS BOTÕES-->
+                <button onclick="onOff()">+Adicionar Ideia</button>
+                <button class="fat">Ver Ideias</button>
+            </section>
+
+
+
+            <footer>
+                <!--ESCRITA EM BAIXO DOS BOTÕES-->
+                <!-- abre página em uma nova aba -->
+                <!-- <p id="footer"> Com ❤ <a href="http://rocketseat.com.br" target="_blank">Rocketseat</a> </p> -->
+                Com ❤ <a href="http://rocketseat.com.br">Rocketseat</a>
+            </footer>
+
+        </section>
+        <!--FECHA-->
+        <!--CAIXA QUE FICA A LOGO, O TEXTO INICIAL E OS DOIS BOTÕES-->
+
+        <section id="last-ideas">
+            <!--ABRE-->
+            <!--CAIXA QUE FICA O CADASTRAR IDEIA-->
+
+            <div class="idea">
+                <!--ABRE-->
+                <!--CAIXA QUE VAI CONTER A IDEIA. DEU ID PORQUE VAMOS REPETIR PARA AS 3 IDEIAS-->
+
+                <!--Ícone que vai aparecer na ideia-->
+                <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Imagem de Curso de Programação">
+
+                <!--Descrição da atividade-->
+                <div class="content">
+
+                    <h3>Cursos de Programação</h3>
+                    <!--NOME IDEIA-->
+                    <p>Estudo</p>
+                    <!--CATEGORIA IDEIA-->
+                    <div class="description">
+                        <!--DESCRIÇÃO IDEIA-->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum commodi voluptate
+                        facilis consectetur officiis reprehenderit at harum maxime accusamus ut quo, id beatae aliquid
+                        possimus sunt nostrum enim repellat?
+                    </div>
+
+                    <a href="">
+                        <!--LINCK PARA IR PARA IDEIA-->
+                        Ir para a Ideia
+                    </a>
+
+                </div>
+                <!--Fim da descrição da ideia-->
+
+            </div>
+            <!--FECHA-->
+            <!--CAIXA QUE VAI CONTER A IDEIA. DEU ID PORQUE VAMOS REPETIR PARA AS 3 IDEIAS-->
+
+            <div class="idea">
+                <!--ABRE-->
+                <!--CAIXA QUE VAI CONTER A IDEIA. DEU ID PORQUE VAMOS REPETIR PARA AS 3 IDEIAS-->
+
+                <!--Ícone que vai aparecer na ideia-->
+                <img src="https://image.flaticon.com/icons/svg/2729/2729005.svg" alt="Imagem de Exercício">
+
+                <!--Descrição da atividade-->
+                <div class="content">
+
+                    <h3>Exercícios</h3>
+                    <!--NOME IDEIA-->
+                    <p>Saúde</p>
+                    <!--CATEGORIA IDEIA-->
+                    <div class="description">
+                        <!--DESCRIÇÃO IDEIA-->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum commodi voluptate
+                        facilis consectetur officiis reprehenderit at harum maxime accusamus ut quo, id beatae aliquid
+                        possimus sunt nostrum enim repellat?
+                    </div>
+
+                    <a href="">
+                        <!--LINCK PARA IR PARA IDEIA-->
+                        Ir para a Ideia
+                    </a>
+
+                </div>
+                <!--Fim da descrição da ideia-->
+
+            </div>
+            <!--FECHA-->
+            <!--CAIXA QUE VAI CONTER A IDEIA. DEU ID PORQUE VAMOS REPETIR PARA AS 3 IDEIAS-->
+
+            <div class="idea">
+                <!--ABRE-->
+                <!--CAIXA QUE VAI CONTER A IDEIA. DEU ID PORQUE VAMOS REPETIR PARA AS 3 IDEIAS-->
+
+                <!--Ícone que vai aparecer na ideia-->
+                <img src="https://image.flaticon.com/icons/svg/2729/2729027.svg" alt="Imagem de meditação">
+
+                <!--Descrição da atividade-->
+                <div class="content">
+
+                    <h3>Meditação</h3>
+                    <!--NOME IDEIA-->
+                    <p>Mentalidade</p>
+                    <!--CATEGORIA IDEIA-->
+                    <div class="description">
+                        <!--DESCRIÇÃO IDEIA-->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum commodi voluptate
+                        facilis consectetur officiis reprehenderit at harum maxime accusamus ut quo, id beatae aliquid
+                        possimus sunt nostrum enim repellat?
+                    </div>
+
+                    <a href="">
+                        <!--LINCK PARA IR PARA IDEIA-->
+                        Ir para a Ideia
+                    </a>
+
+                </div>
+                <!--Fim da descrição da ideia-->
+
+            </div>
+            <!--FECHA-->
+            <!--CAIXA QUE VAI CONTER A IDEIA. DEU ID PORQUE VAMOS REPETIR PARA AS 3 IDEIAS-->
+
+        </section>
+        <!--FECHA-->
+        <!--CAIXA QUE FICA O CADASTRAR IDEIA-->
+
+    </div>
+    <!--FECHA-->
+    <!--"CAIXA GRANDE" EM VOLTA DE TUDO-->
+
+    <!--MODAL-->
+    <div id="modal" class="hide">
+        <!--ABRE-->
+        <!--"MODAL-->
+
+        <div class="content">
+
+            <h1>Nova Ideia</h1>
+
+            <form action="">
+
+                <div class="input-wrapper">
+                    <label for="title">Título da Ideia</label>
+                    <input type="text" name="title">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="image"> Imagem </label>
+                    <input type="url" name="image">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="description">Digite uma descrição para essa ideia</label>
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="link"> Link da Ideia </label>
+                    <input type="url" name="link">
+                </div>
+
+                <a href="#" onclick="onOff()">Voltar</a>
+                <button>
+                    Salvar
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+    <!--FECHA-->
+    <!--"MODAL-->
+
+    <script src="scripts.js"></script>
+    <!--REFERENCIA ONDE VAI ESTAR O SCRIPT-->
 
 </body>
 
