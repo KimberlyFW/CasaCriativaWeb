@@ -12,14 +12,15 @@
 
 </head>
 
-<body id ="{{bodyId}}">
+<body id="{{bodyId}}">
     <div id="container">
         {%block content %}
         {%endblock%}
     </div>
-   
+
     {% include "modal.html" %}
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="/scripts.js"></script>
 </body>
 

@@ -11,7 +11,7 @@ body.hideScroll{
 }
 a {
     color: #ff5e84;
-    font-weight: bold;
+    font-weight: bold; 
     text-decoration: none;
 }
 
@@ -27,6 +27,7 @@ p,
 }
 
 .button {
+    margin-top: 4px;
     background: #ff5e84;
     color: white;
     width: 150px;
